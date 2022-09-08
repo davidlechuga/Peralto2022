@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-peralto2022-dev-154202-authRole",
+      "UnauthRoleArn": "arn:aws:iam::861318639742:role/amplify-peralto2022-dev-154202-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::861318639742:role/amplify-peralto2022-dev-154202-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-peralto2022-dev-154202-deployment",
+      "UnauthRoleName": "amplify-peralto2022-dev-154202-unauthRole",
+      "StackName": "amplify-peralto2022-dev-154202",
+      "StackId": "arn:aws:cloudformation:us-east-2:861318639742:stack/amplify-peralto2022-dev-154202/522dc660-2fae-11ed-b26c-0a69ad307520",
+      "AmplifyAppId": "djgxy783b7g66"
+    }
+  }
+}
