@@ -1,0 +1,66 @@
+@import '../../scss/index.scss';
+
+.footer_logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 26%;
+    margin-top: 50px;
+}
+
+.nav-footer {
+    text-align: center;
+    justify-content: center;
+    margin-left: 292px;
+    margin-top: 30px;
+
+    
+    a{
+		color: white;
+		font-size: 25px ;
+    }
+}
+
+.container-footer{
+    //background :url("../../assets/imagenes-layout/stars.svg"), #1b1b25;
+    background-color: bisque;
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+
+	.nav-footer {
+        text-align: center;
+    justify-content: center;
+    margin-left: 69px;
+    margin-top: 30px;
+    width: 100%;
+
+}
+.nav-footer {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    a{
+		color: white;
+		font-size: 16px !important;
+    }
+
+}
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+.nav-footer {
+    text-align: center;
+    justify-content: center;
+    margin-left: 175px;
+    margin-top: 30px;
+
+}
+
+}

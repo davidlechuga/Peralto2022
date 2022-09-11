@@ -10,6 +10,11 @@
       "StackName": "amplify-peralto2022-dev-154202",
       "StackId": "arn:aws:cloudformation:us-east-2:861318639742:stack/amplify-peralto2022-dev-154202/522dc660-2fae-11ed-b26c-0a69ad307520",
       "AmplifyAppId": "djgxy783b7g66"
+    },
+    "categories": {
+      "auth": {
+        "peralto2022f690b93d": {}
+      }
     }
   }
 }

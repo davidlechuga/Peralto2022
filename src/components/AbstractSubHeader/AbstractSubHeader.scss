@@ -1,0 +1,35 @@
+
+@import '../../scss/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap');
+
+.description-SA{
+    font-family: 'Piazzolla', serif;
+    font-weight: 600 !important;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.ui.container {
+    
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.abstract-img{
+    bottom: 100px;
+    z-index: 1;
+    right: 45px;
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+
+    .abstract-img{
+    bottom: 0px;
+    z-index: 1;
+}
+
+ }

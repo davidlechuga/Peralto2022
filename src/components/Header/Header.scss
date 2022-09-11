@@ -1,0 +1,94 @@
+@import '../../scss/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+
+nav > a {
+	font-family: 'Orbitron', sans-serif;
+}
+
+.header {
+	padding-left: 345px;
+	max-width: 100%;
+	position: relative;
+	background-color: $background-light;
+    z-index: 1;
+	margin-left: auto;
+	margin-right: 0px;
+	background :url("../../assets/imagenes-layout/stars.svg"), #1b1b25;
+    background-color: black
+
+	&__logo {
+		display: flex !important;
+		align-items: center;
+	}
+
+	.ui.grid > div {
+		align-self: center;
+		text-align: center;
+    }
+    
+    .ui.image {
+        max-width: 118%;
+        margin-left: 25px;
+    }
+
+	img {
+		height: 88px;
+        border-radius: 61px;
+        
+	}
+
+	.navigation{
+		align-self: center ;
+	}
+
+	.nav-header {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    a{
+		color: white;
+		font-size: 25px ;
+    }
+
+}
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+
+	.header {
+	padding-left: 0px;
+    width: 100% !important;
+	position: relative;
+	background-color: $background-light;
+    z-index: 1;
+	margin-left: auto;
+	background :url("../../assets/imagenes-layout/stars.svg"), #1b1b25;
+    background-color: black;
+
+	.ui.grid > div {
+		align-self: center;
+		text-align: center;
+    }
+    
+    .ui.image {
+        max-width: 118%;
+        margin-left: 25px;
+    }
+	 }
+
+	 .nav-header {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    a{
+		color: white;
+		font-size: 16px !important;
+    }
+
+}
+}

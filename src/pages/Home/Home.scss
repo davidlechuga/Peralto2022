@@ -1,0 +1,53 @@
+@import '../../scss/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap');
+
+
+.title-blog {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300 !important;
+    font-size: 30px;
+    margin-top: 10px !important;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 40px;
+   
+}
+
+.description-blog {
+    font-family: 'Piazzolla', serif;
+    font-weight: 600 !important;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    text-align: center;
+    
+}
+
+.group-articles{
+    justify-content: center;
+    text-align: center;
+}
+
+.paginationContainer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  //AbstractSubHeader
+  .title-blog {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300 !important;
+    font-size: 30px;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 20px;
+   
+}
+}
