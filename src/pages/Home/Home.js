@@ -1,45 +1,60 @@
 // Frameworks functions
 import React from 'react';
-import { useCallback, useRef, useState } from 'react';
+//import { useCallback, useRef, useState } from 'react';
 // Frameworks and local styles
 import './Home.scss';
+import { List, Image } from 'semantic-ui-react'
+import ine1 from '../../assets/imagenes-layout/ine-1.png'
+import ine2 from '../../assets/imagenes-layout/ine-2.png'
 
-import { Container } from 'semantic-ui-react';
+
 // Components
-import Webcam from 'react-webcam'
+//import Webcam from 'react-webcam'
 
 export default function Home() {
 
-    const WebcamComponent = () => <Webcam />;const videoConstraints = {
-        width: 220,
-        height: 200,
-        facingMode: "user"
-      };
-      
-      const WebcamCapture = () => {const webcamRef = React.useRef(null);
-      
-        const capture = React.useCallback(
-          () => {
-            const imageSrc = webcamRef.current.getScreenshot();
-          },
-      
-          [webcamRef]
-        );
-      
-        return (
-          <div className="webcam-container">
-            <Webcam
-              audio={false}
-              height={200}
-              ref={webcamRef}
-              screenshotFormat="image/jpeg"
-              width={220}
-              videoConstraints={videoConstraints}
-            />
-            <button 
-            onClick={(e)=>{e.preventDefault();capture()}}>
-            Capture</button>
-          </div>
-        );
-      };
-}
+  return (
+    <List>
+    <List.Item className='item_list'>
+        <Image src={ine1} alt="ine-1" />
+         <Image src={ine2} alt="ine-1" />
+    </List.Item>
+  </List>
+  )
+
+  /*
+  
+    const webcamRef = useRef(null);
+    const [imgSrc, setImgSrc] = useState(null);
+  
+    const capture = useCallback(() => {
+      const currentImageSrc = webcamRef.current.getScreenshot();
+      setImgSrc(currentImageSrc);
+    }, [webcamRef, setImgSrc]);
+
+
+    //console.log(imgSrc);
+  
+    return (
+      <>
+        <Webcam
+          audio={false}
+          ref={webcamRef}
+          screenshotFormat="image/jpeg"
+        />
+        
+        <button onClick={capture}>Capture photo</button>
+        {imgSrc && (
+          <img
+            alt='img'
+            src={imgSrc}
+          />
+          
+        )}
+      </>
+    );
+
+    */
+  };
+
+

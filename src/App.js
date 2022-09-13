@@ -1,11 +1,13 @@
   //React
   import React from 'react';
-  import { useEffect, useState }  from 'react';
+  import { useCallback, useEffect, useRef, useState } from 'react';
   //Routes
   import Navigation from './routes/Navigation';
 
   //Components
   import Lists from './components/List/Lists';
+
+  import Webcam from 'react-webcam'
 
 
   //amplify frameworks
@@ -23,10 +25,23 @@
 
   function App() {
 
-    const [authState, setAuthState] = React.useState();
-    const [user, setUser] = React.useState();
+    const [authState, setAuthState] = useState();
+    const [user, setUser] = useState();
 
-    const [lists, setLists] = React.useState([]);
+    const [lists, setLists] = useState([]);
+
+
+    const webcamRef = useRef(null);
+    const [imgSrc, setImgSrc] = useState(null);
+  
+    const capture = useCallback(() => {
+      const currentImageSrc = webcamRef.current.getScreenshot();
+      setImgSrc(currentImageSrc);
+    }, [webcamRef, setImgSrc]);
+
+    //console.log(imgSrc);
+
+
     
     async function fetchList() {
       const {data} = await API.graphql({
@@ -39,6 +54,7 @@
       //setList(data.listLists.items)
       //console.log((await (await result).data.listLists.items));
       console.log(data);
+      
     }
 
     useEffect(() => { 
@@ -64,10 +80,35 @@
 
         <div className="App">
 
+       
+
 
           <Navigation />
 
-          <Lists lists={lists} />
+          <div>
+            <Webcam
+              
+              audio={false}
+              ref={webcamRef}
+              screenshotFormat="image/jpeg"
+            />
+          
+            <button onClick={capture}>Capture photo</button>
+              {imgSrc && (
+                <img
+                  className='img-capture'
+                  alt='img'
+                  src={imgSrc}
+                />
+
+                
+              
+              )}
+          </div>
+
+          <Lists lists={lists} imgSrc={imgSrc}  />
+
+
 
           <AmplifySignOut />
 

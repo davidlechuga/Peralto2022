@@ -1,14 +1,21 @@
 import React from 'react';
 import List from './List';
 import {Item} from 'semantic-ui-react'
+import './List.scss'
 
+function Lists({lists, imgSrc}) {
 
-function Lists({lists}) {
+  //console.log(imgSrc);
+
+  const img_src = { imgSrc } 
+  //console.log(img_src);
+
   return (
     <div>
-      <Item.Group>
+      
+      <Item.Group >
         {lists.map((item) => (
-          <List key={item.id} {...item}> {item.title} </List>
+          <List key={item.id} {...img_src} {...item}> {item.title} </List>
         ))}
       </Item.Group>
     

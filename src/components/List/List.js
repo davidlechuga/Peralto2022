@@ -1,10 +1,15 @@
 import React from 'react'
+
 import { List, Image } from 'semantic-ui-react'
 import Logo from '../../assets/imagenes-layout/logoPeranto.png'
 import '../List/List.scss'
 
 
+
 const Listt = ({title, description, createdAt}) => (
+  
+  
+  
   <List>
     <List.Item className='item_list'>
         <Image src={Logo} alt="Twitgov" />

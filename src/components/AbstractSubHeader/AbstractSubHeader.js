@@ -15,12 +15,11 @@ export default function AbstractSubHeader() {
                         
                     </Grid.Column>
                     <Grid.Column className="col-title" width={9}>
-                        <h1 className="team-name"> ESTUDIOS DE ECOSISTEMAS FUTUROS </h1>
+                        <h1 className="team-name"> PERANTO </h1>
                         <h4 className="description-SA">
-                            Con nuestra consultoría especializada en planeación prospectiva ,
-                            podemos ayudarlos para  determinar los componentes que deben considerarse en los escenarios futuros,
-                            a definir los objetivos,
-                            los programas de trabajo y las metas que se deben alcanzar a mediano y a largo plazo.
+                        Servicio de acceso rápido. 
+                        Bienvenido, peranto es un intermediario para tus identificaciones legales, podrás subir documentos como tu INE para poder usarlos en puntos de control como recepciones, fronteras u otro tipo de servicios como Fintech o DeFi sin necesidad de volver a pasar por otro registro KYC. 
+                        Bienvenido.
                         </h4>
 
                     </Grid.Column>
